@@ -6,6 +6,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.undertheriver.sgsg.common.dto.CurrentUser;
 import com.undertheriver.sgsg.user.domain.User;
 import com.undertheriver.sgsg.user.domain.UserRepository;
+
 import lombok.RequiredArgsConstructor;
 
 @Transactional(readOnly = true)
@@ -26,6 +27,7 @@ public class UserService {
 			.id(user.getId())
 			.name(user.getName())
 			.profileImageUrl(user.getProfileImageUrl())
+			.email(user.getEmail())
 			.userRole(user.getUserRole())
 			.build();
 	}

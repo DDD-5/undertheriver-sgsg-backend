@@ -25,3 +25,6 @@ paging:
     limit: 20
     max_limit: 50
     min_page: 1
+server:
+  http2:
+    enabled: true
